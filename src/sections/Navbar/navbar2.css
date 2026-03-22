@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
+    font-family: 'Rubik';
+    font-weight: 600;
+
+    .logo {
+        margin: 0 40px;
+    }
+
+    .nav-items ul{
+        display: flex;
+
+        li{
+            list-style: none;
+            margin-right: 40px;
+
+            a{
+                text-decoration: none;
+                color: var(--text-color);
+                transition: color 200ms ease-in-out;
+            }
+
+            a:hover {
+                color: var(--a-tag-color);
+            }
+
+            a.active {
+                color: var(--a-tag-color);
+            }
+        }
+    }
+}

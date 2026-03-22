@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
     text-align: center;
-    height: 100dvh;
+    height: 90dvh;
     min-height: 500px;
+    padding-top: 80px;
 
     .hero {
         max-width: 200px;
@@ -60,7 +60,7 @@
 
 .colorMode {
     position: absolute;
-    right: 0;
+    /* right: 0; */
     width: 25px;
 }
 
@@ -76,7 +76,11 @@
 .info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+
+    .name {
+        color: var(--name-color);
+    }
 }
 
 @media (width >= 800px) {

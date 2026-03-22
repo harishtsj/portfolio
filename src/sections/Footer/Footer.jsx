@@ -4,10 +4,11 @@ import styles from './FooterStyles.module.css'
 function Footer() {
   return (
     <section id='footer' className={styles.container}>
-        <p>
-            &copy; 2025 Harish T S J<br />
-            All rights reserved
+      <p>
+        &copy; {new Date().getFullYear()} Harish T S J<br />
+        All Rights Reserved
         </p>
+
     </section>
   )
 }
