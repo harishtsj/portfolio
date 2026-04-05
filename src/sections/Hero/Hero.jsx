@@ -35,7 +35,7 @@ function Hero() {
                 </a>
             </span>
             <p className={styles.description}>
-                With a passion for developing modern React web apps for commercial businesses
+                Frontend-focused developer evolving into full-stack, passionate about building modern, scalable web applications with React and full-stack technologies.
             </p>
             <a href={CV} download='Harish_Resume.pdf'>
                 <button className='hover'>

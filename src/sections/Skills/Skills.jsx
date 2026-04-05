@@ -9,7 +9,7 @@ function Skills() {
 
     const { theme } = useThemeContext();
     const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark
-    const frontEnd = ["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit"];
+    const frontEnd = ["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "Tailwind"];
     const backEnd = ["Basic Core Java", "Node.js", "Express.js", "Mongo DB"]
     const perfTest = ["Apache Jmeter", "IBM Thread Analyzer", "GC Analysis"]
     const otherTools = ["GC Viewer", "GitHub", "GitLab"]

@@ -26,7 +26,7 @@ textarea {
 
 input, textarea {
     font-family: 'Rubik', monospace;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     box-sizing: border-box;
     box-shadow: var(--box-shadow);

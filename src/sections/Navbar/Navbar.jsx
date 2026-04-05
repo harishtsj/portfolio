@@ -25,7 +25,7 @@ import { useState } from 'react'
 import styles from './NavbarStyles.module.css'
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={styles.container}>

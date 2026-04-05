@@ -1,11 +1,22 @@
 // eslint-disable-next-line react/prop-types
-function ProjectCard({link, src, alt, h3, p}) {
+import styles from './ProjectsStyles.module.css';
+
+function ProjectCard({list, id, link, src, alt, h3, p }) {
   return (
-            <a href={link} target="_blank">
-                <img className="hover" src={src} alt={alt} />
-                <h3>{h3}</h3>
-                <p>{p}</p>
-            </a>
+    <div>
+      <div className={`${styles.projectContainer} ${id % 2 === 0 ? styles.reverse : ''}`}>
+        <div className={styles.projImg}>
+          <a href={link} target="_blank">
+            <img src={src} alt={alt} />
+            <h3>{h3}</h3>
+          </a>
+        </div>
+        <div className={styles.projText}>
+          <p>{p}</p>
+        </div>
+      </div>
+      {list.length === id ? <></> : <hr></hr>}
+    </div>
   );
 }
 
