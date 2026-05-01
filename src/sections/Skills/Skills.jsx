@@ -10,9 +10,9 @@ function Skills() {
     const { theme } = useThemeContext();
     const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark
     const frontEnd = ["HTML", "CSS", "JavaScript", "React", "Redux-Toolkit", "Tailwind"];
-    const backEnd = ["Basic Core Java", "Node.js", "Express.js", "Mongo DB"]
+    const backEnd = ["Basic Core Java", "Node.js", "Express.js", "Mongo DB", "Socket.io"]
     const perfTest = ["Apache Jmeter", "IBM Thread Analyzer", "GC Analysis"]
-    const otherTools = ["GC Viewer", "GitHub", "GitLab"]
+    const devOpsTools = ["GC Viewer", "GitHub", "GitLab", "Docker"]
 
   return (
     <section id='skills' className={styles.container}>
@@ -51,10 +51,10 @@ function Skills() {
                 }
             </div>
             <hr />
-            <h3>Other Tools</h3>
+            <h3>DevOps Tools</h3>
             <div className={styles.skillList}>
                 {
-                    otherTools.map((skill, i) => {
+                    devOpsTools.map((skill, i) => {
                         return (
                             <SkillList key={i} src={checkMarkIcon} skill={skill} />
                         )
